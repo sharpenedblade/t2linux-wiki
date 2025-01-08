@@ -21,4 +21,5 @@ Many thanks to Mike for building. You can download a live iso [here](https://git
 
 1. Follow the installation instructions above, but use your custom (vanilla) ISO. You need an external keyboard and mouse.
 2. Add our DNF repo: `sudo dnf copr enable sharpenedblade/t2linux`
-3. Install our packages: `sudo dnf install t2linux-config && sudo dnf upgrade kernel`
+3. Install our packages: `sudo dnf install t2linux-release t2linux-repos && sudo dnf upgrade kernel`
+4. Remove duplicated repo files: `sudo dnf copr disable sharpenedblade/t2linux`
